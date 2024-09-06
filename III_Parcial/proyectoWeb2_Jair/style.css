@@ -1,0 +1,168 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #001f3f;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    flex: 1;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 0;
+    background-color: #007BFF;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #0056b3;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+#hero {
+    position: relative;
+    text-align: center;
+    color: white;
+    background: url('reloj-background.jpg') no-repeat center center/cover;
+    padding: 50px 20px;
+}
+
+.hero-content {
+    background-color: rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    padding: 20px;
+}
+
+#hero h2 {
+    font-size: 2.5em;
+    margin: 20px 0;
+}
+
+#hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff4136;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.cta-button:hover {
+    background-color: #b10d0d;
+}
+
+section {
+    padding: 40px 20px;
+    text-align: center;
+    margin: 20px 0;
+    background-color: #e3f2fd;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+section:nth-of-type(odd) {
+    background-color: #bbdefb;
+}
+
+section:nth-of-type(even) {
+    background-color: #90caf9;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #1a237e;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    color: #0d47a1;
+}
+
+ul li {
+    margin: 10px 0;
+}
+
+blockquote {
+    font-style: italic;
+    margin: 20px 0;
+    color: #333;
+}
+
+.image-carousel {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: #e3f2fd;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin: 0 auto;
+    max-width: 80%;
+    overflow: hidden;
+}
+
+.image-carousel img {
+    max-width: 250px;
+    height: auto;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.image-carousel img:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: #001f3f;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer h2 {
+    margin: 0 0 10px 0;
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+@media screen and (max-width: 800px) {
+    nav a {
+        font-size: 14px;
+        padding: 5px;
+    }
+}
